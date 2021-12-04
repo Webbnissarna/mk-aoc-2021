@@ -2,7 +2,7 @@
   "name": "mk-aoc-2021",
   "private": true,
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "My personal solutions to the Advent of Code challenges for 2021",
   "main": "index.js",
   "repository": {
