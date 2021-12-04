@@ -1,11 +1,4 @@
-import { promises as fs } from "fs";
-import path from "path";
-
-async function readInput(challengeID: number): Promise<string> {
-  const filePath = path.join("src/", challengeID.toString(), "input");
-  const file = await fs.readFile(filePath, { encoding: "utf-8" });
-  return file;
-}
+import { readInput } from "../utils.js";
 
 async function part1(inputs: string[]): Promise<void> {
   const amountIncremented = inputs.reduce(
