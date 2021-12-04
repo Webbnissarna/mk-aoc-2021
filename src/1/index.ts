@@ -1,6 +1,6 @@
 import { readInput } from "../utils.js";
 
-async function part1(inputs: string[]): Promise<void> {
+function part1(inputs: string[]): void {
   const amountIncremented = inputs.reduce(
     (incremented, inputRow, currentIndex) => {
       if (currentIndex > 0) {
@@ -20,7 +20,7 @@ async function part1(inputs: string[]): Promise<void> {
   console.log("amountIncremented", amountIncremented);
 }
 
-async function part2(inputs: string[]): Promise<void> {
+function part2(inputs: string[]): void {
   function getSlidingSum(endIndex: number): number {
     const rawValues = inputs.slice(endIndex - 2, endIndex + 1);
     const values = rawValues.map((value) => parseInt(value, 10));
@@ -52,6 +52,6 @@ async function part2(inputs: string[]): Promise<void> {
 
   const inputs = input.split("\n");
 
-  await part1(inputs);
-  await part2(inputs);
+  part1(inputs);
+  part2(inputs);
 })();
