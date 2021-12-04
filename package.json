@@ -32,5 +32,9 @@
     "commitizen": {
       "path": "./node_modules/cz-emoji"
     }
+  },
+  "engines": {
+    "node": ">=17",
+    "npm": "~8.1.2"
   }
 }
